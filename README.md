@@ -1,4 +1,3 @@
 # hello-world
 
-Greetings.
-My name is Chelsea. I prefer Chels, but either is fine.
+Greetings. Repository for reference. If any Pendo-related custom code is provided, refer to READ ME here: https://github.com/pendo-io/snippets
