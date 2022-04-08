@@ -9,10 +9,10 @@
                 "source": {
                     "pollEvents": null,
                     "timeSeries": {
-                            "period": "hourRange",
-                            "first": "now() - 24*60601000",
-                            "last": "now()"
-                        }
+                        "period": "dayRange",
+                        "first": "now()",
+                        "count": -30
+                    }
                 }
             },
             {
