@@ -1,0 +1,32 @@
+{
+    "response": {
+        "mimeType": "application/json",
+        "location": "request"
+    },
+    "request": {
+        "pipeline": [
+            {
+                "source": {
+                    "pollEvents": null,
+                    "timeSeries": {
+                            "period": "hourRange",
+                            "first": "now() - 24*60601000",
+                            "last": "now()"
+                        }
+                }
+            },
+            {
+                "bulkExpand": {
+                    "account": {
+                        "account": "accountId"
+                    }
+                }
+            },
+            {
+                "select": {
+                    "accountName": "account.auto.id"
+                }
+            }
+        ]
+    }
+}
